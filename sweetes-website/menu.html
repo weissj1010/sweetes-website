@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Order | Sweet E's Homemade Confections</title>
+<meta name="description" content="Order handmade turtles, buckeyes, pecan brittle, gift boxes and seasonal chocolates from Sweet E's in Waukesha, WI.">
+<link rel="icon" href="images/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Lora:ital,wght@0,400;0,500;1,400&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="shop-page">
+
+<div class="banner" id="banner"></div>
+
+<header class="top">
+  <div class="wrap top-inner">
+    <a href="index.html" class="brand"><img src="images/logo.png" alt="Sweet E's Homemade Confections logo"><span>Sweet E's</span></a>
+    <nav class="nav" id="shop-nav"></nav>
+    <button class="btn btn-small bag-btn" id="bag-open" type="button">Bag <span id="bag-count">0</span></button>
+  </div>
+</header>
+
+<main>
+  <section class="shop-head">
+    <div class="wrap">
+      <p class="eyebrow">Place your order</p>
+      <h1 class="shop-title">The <em>menu</em></h1>
+      <p class="lead">Everything is made to order and ready within 3 business days. Free pickup in Waukesha, or local delivery for $15 (free on orders of $100 or more).</p>
+    </div>
+  </section>
+
+  <div class="wrap" id="shop">
+    <p class="loading" id="loading">Loading the menu...</p>
+  </div>
+</main>
+
+<aside class="drawer" id="drawer" aria-hidden="true" aria-label="Your bag">
+  <div class="drawer-scrim" data-close></div>
+  <div class="drawer-panel" role="dialog" aria-modal="true" aria-labelledby="bag-title">
+    <div class="drawer-head">
+      <h2 id="bag-title">Your bag</h2>
+      <button class="icon-btn" type="button" data-close aria-label="Close bag">&times;</button>
+    </div>
+    <div class="drawer-body">
+      <ul class="bag-list" id="bag-list"></ul>
+      <p class="bag-empty" id="bag-empty">Your bag is empty. Add something sweet.</p>
+
+      <div class="bag-options" id="bag-options">
+        <fieldset class="choice">
+          <legend>How do you want it?</legend>
+          <label><input type="radio" name="method" value="pickup" id="method-pickup" checked> <span>Pickup in Waukesha <em>Free</em></span></label>
+          <label><input type="radio" name="method" value="delivery" id="method-delivery"> <span>Local delivery <em id="delivery-price">$15</em></span></label>
+        </fieldset>
+        <label class="field" for="need-by">Need it by a certain date? <span class="opt">(optional)</span></label>
+        <input class="input" type="date" id="need-by">
+        <label class="field" for="order-note">Anything I should know? <span class="opt">(optional)</span></label>
+        <textarea class="input" id="order-note" rows="2" maxlength="300" placeholder="Gift message, allergies, pickup time that works"></textarea>
+      </div>
+    </div>
+    <div class="drawer-foot" id="bag-foot">
+      <div class="sum"><span>Subtotal</span><span id="bag-subtotal">$0.00</span></div>
+      <div class="sum small-sum" id="bag-delivery-row" hidden><span>Delivery</span><span id="bag-delivery">$15.00</span></div>
+      <p class="tax-note">Tax is added at checkout.</p>
+      <button class="btn btn-block" id="checkout" type="button">Checkout</button>
+      <p class="checkout-msg" id="checkout-msg" role="status"></p>
+      <p class="secure">You'll pay securely through Square.</p>
+    </div>
+  </div>
+</aside>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<footer class="foot">
+  <div class="wrap foot-inner">
+    <div>
+      <img src="images/logo.png" alt="" class="foot-logo">
+      <p>Hand-crafted confections rooted in family tradition. Made by hand in Waukesha, Wisconsin.</p>
+    </div>
+    <div>
+      <h4>Get in touch</h4>
+      <p><a href="mailto:sweetes262@gmail.com">sweetes262@gmail.com</a><br><a href="tel:+12625010691">262-501-0691</a></p>
+    </div>
+    <div>
+      <h4>Follow along</h4>
+      <p><a href="https://www.instagram.com/sweetesconfections" target="_blank" rel="noopener">Instagram</a><br><a href="https://www.facebook.com/sweetesconfections" target="_blank" rel="noopener">Facebook</a></p>
+    </div>
+    <div>
+      <h4>Back to</h4>
+      <p><a href="index.html">Home</a><br><a href="index.html#story">My story</a></p>
+    </div>
+  </div>
+  <p class="wrap legal">&copy; <span id="year"></span> Sweet E's Homemade Confections</p>
+</footer>
+
+<script src="seasons.js"></script>
+<script src="shop.js"></script>
+</body>
+</html>

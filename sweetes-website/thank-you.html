@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Thank you | Sweet E's Homemade Confections</title>
+<link rel="icon" href="images/logo.png">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Lora:ital,wght@0,400;0,500;1,400&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="banner" id="banner"></div>
+<header class="top"><div class="wrap top-inner"><a href="index.html" class="brand"><img src="images/logo.png" alt="Sweet E's logo"><span>Sweet E's</span></a></div></header>
+<main class="thanks"><div class="wrap">
+  <p class="eyebrow">Order received</p>
+  <h1>Thank you, <em>truly.</em></h1>
+  <div class="rule"></div>
+  <p>Your order is in, and I'll start making it by hand. It will be ready within 3 business days. Square will email you a receipt, and I'll reach out if I have any questions.</p>
+  <a class="btn" href="index.html">Back to Sweet E's</a>
+  <p class="signature" style="margin-top:36px">Erin</p>
+</div></main>
+<script src="seasons.js"></script>
+<script>
+(function(){var s=SEASONS[ACTIVE_SEASON]||SEASONS.everyday;Object.keys(s.colors).forEach(function(k){document.documentElement.style.setProperty('--'+k,s.colors[k])});document.getElementById('banner').textContent=s.banner;try{localStorage.removeItem('sweetes-bag-v1')}catch(e){}})();
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+SWEET E'S WEBSITE: HOW TO SWITCH SEASONS
+
+1. Open the file called seasons.js
+2. Near the top you'll see:   const ACTIVE_SEASON = "christmas";
+3. Change the word in quotes to another season, like "everyday"
+4. Save. The live site updates in a minute or two.
+
+Or just ask Claude: "switch Sweet E's to everyday" (or any season).
+
+Seasons ready now: christmas, everyday
+Coming next: valentines, easter, mothers-day, fall (caramel apples)
+
+THE MENU
+The order page pulls products and prices straight from Erin's Square.
+Change a price in Square and the website changes too.
+- The season's Square category shows first (squareCategory in seasons.js).
+- Items in "All The Time" show next (box sets, then treats).
+- Hide an item from the website by adding its exact Square name to HIDE_ITEMS.
+
+CHECKOUT
+Orders go through Square and show up in Erin's Square app.
+The website needs a Square key saved in Vercel as SQUARE_ACCESS_TOKEN.
